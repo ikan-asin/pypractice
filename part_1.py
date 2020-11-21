@@ -1,30 +1,34 @@
-tambah = lambda x,y : print('Hasil : ',x + y,'\n')
-kurang = lambda x,y : print('Hasil : ',x - y,'\n')
-kali = lambda x,y : print('Hasil : ',x * y,'\n')
-bagi = lambda x,y : print('Hasil : ',x / y,'\n')
+plus = lambda x,y : x + y
+minus = lambda x,y : x - y
+times = lambda x,y : x * y
+divide = lambda x,y : x / y
 
 print('Kalkulator')
 print('='*20)
 
 while True:
 	try :
-		print('Kalo udah g mo pake klik Ctrl + c')
-		x = int(input('Masukin angka pertama : '))
-		y = int(input('Masukin angka kedua : '))
+		print('If you have done, click Ctrl + c')
+		x = int(input('First number : '))
+		y = int(input('Second number : '))
 		print('+ / - / x / :')
-		data = input('Yg mana : ')
+		data = input('Which one : ')
 
 		if data == '+':
-			tambah(x,y)
+			a = plus(x,y)
+			print('Answer : ',a,'\n')
 
 		elif data == '-':
-			kurang(x,y)
+			b = minus(x,y)
+			print('Answer : ',b,'\n')
 
 		elif data == 'x':
-			kali(x,y)
+			c = times(x,y)
+			print('Answer : ',c,'\n')
 
 		elif data == ':':
-			bagi(x,y)
+			d = divide(x,y)
+			print('Answer : ',d,'\n')
 
 		else:
 			print('Ummm...\n')
@@ -32,6 +36,9 @@ while True:
 	except ValueError:
 		print('Heii\n')
 		continue
+
+	except ZeroDivisionError:
+		print('U can\'t devide it with 0')
 
 	except KeyboardInterrupt:
 		print('\nByee')
