@@ -1,3 +1,3 @@
 # pypractice
 
-Just to practice for a bit
+Umm iseng aja sihh
