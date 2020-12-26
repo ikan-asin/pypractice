@@ -1,9 +1,10 @@
+# some function
 plus = lambda x,y : x + y
 minus = lambda x,y : x - y
 times = lambda x,y : x * y
 divide = lambda x,y : x / y
 
-print('Kalkulator')
+print('Calculator')
 print('='*20)
 
 while True:

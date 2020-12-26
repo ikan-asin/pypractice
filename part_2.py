@@ -3,8 +3,11 @@ game = ['rock','paper','scissor']
 
 while True:
 	try:
+		# randomize it
 		game2 = random.choice(game)
 		data = input('rock / paper / scissor : ')
+
+		# here's the if-else magic happens
 		if data == 'rock' and game2 == 'paper':
 			print('U lose')
 
